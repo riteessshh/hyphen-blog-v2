@@ -43,14 +43,14 @@ const Art = new mongoose.model("Art", artsSchema);
 //   res.send("hello!");
 // });
 
-app.get("/articles", function (req, res) {
+app.get("/artcls", function (req, res) {
   Art.find({}, function (err, foundArt) {
     // console.log(foundPost);
     res.send(foundArt);
   });
 });
 
-app.get("/articles/:art_id", function (req, res) {
+app.get("/artcls/:art_id", function (req, res) {
   let id = req.params.art_id;
 
   Art.findById(id, function (err, foundArt) {
@@ -83,14 +83,14 @@ const postsSchema = new mongoose.Schema({
 
 const Post = new mongoose.model("Post", postsSchema);
 
-app.get("/posts", function (req, res) {
+app.get("/psts", function (req, res) {
   Post.find({}, function (err, foundArt) {
     // console.log(foundPost);
     res.send(foundArt);
   });
 });
 
-app.get("/posts/:post_id", function (req, res) {
+app.get("/psts/:post_id", function (req, res) {
   let id = req.params.post_id;
 
   Post.findById(id, function (err, foundArt) {

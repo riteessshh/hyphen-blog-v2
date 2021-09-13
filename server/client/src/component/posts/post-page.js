@@ -13,13 +13,16 @@ function Post(props) {
   const { id } = useParams();
   // console.log(id);
   const [post, setPost] = React.useState(null);
-  const baseURL = "http://localhost:4000/posts/" + id;
+  // const baseURL = "http://localhost:4000/posts/" + id;
 
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(response.data);
-    });
+  React.useEffect(async () => {
+    // axios.get(baseURL).then((response) => {
+    //   setPost(response.data);
+    //   console.log(response.data);
+    // });
+    const res = await fetch("/psts/" + id);
+    const data = await res.json();
+    setPost(data);
   }, []);
 
   if (!post) return null;

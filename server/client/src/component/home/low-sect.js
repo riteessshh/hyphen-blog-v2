@@ -10,7 +10,7 @@ function Section() {
   const [post_a, setPost_a] = React.useState(null);
   const [post_b, setPost_b] = React.useState(null);
   const [post_c, setPost_c] = React.useState(null);
-  const baseURL = "http://localhost:4000/randompost/";
+  const baseURL = "/randompost";
 
   function fetchRandom(given_post) {
     axios.get(baseURL).then((response) => {

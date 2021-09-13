@@ -6,13 +6,16 @@ import "./art-styles.css";
 
 function Article() {
   const [post, setPost] = React.useState(null);
-  const baseURL = "http://localhost:4000/articles/";
+  // const baseURL = "http://localhost:4000/articles/";
 
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(response.data);
-    });
+  React.useEffect(async () => {
+    // axios.get(baseURL).then((response) => {
+    //   setPost(response.data);
+    //   console.log(response.data);
+    // });
+    const res = await fetch("/artcls/");
+    const data = await res.json();
+    setArt(data);
   }, []);
 
   if (!post) return null;

@@ -6,13 +6,16 @@ import "./pstyles.css";
 
 function Article() {
   const [post, setPost] = React.useState(null);
-  const baseURL = "http://localhost:4000/posts/";
+  // const baseURL = "http://localhost:4000/posts/";
 
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(response.data);
-    });
+  React.useEffect(async () => {
+    // axios.get(baseURL).then((response) => {
+    //   setPost(response.data);
+    //   console.log(response.data);
+    // });
+    const res = await fetch("/psts/");
+    const data = await res.json();
+    setPost(data);
   }, []);
 
   if (!post) return null;

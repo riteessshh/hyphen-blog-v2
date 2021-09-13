@@ -13,13 +13,16 @@ function Art(props) {
   const { id } = useParams();
   // console.log(id);
   const [post, setPost] = React.useState(null);
-  const baseURL = "http://localhost:4000/articles/" + id;
+  // const baseURL = "http://localhost:4000/articles/" + id;
 
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setPost(response.data);
-      console.log(response.data);
-    });
+  React.useEffect(async () => {
+    // axios.get(baseURL).then((response) => {
+    //   setPost(response.data);
+    //   console.log(response.data);
+    // });
+    const res = await fetch("/artcls/" + id);
+    const data = await res.json();
+    setPost(data);
   }, []);
 
   // const [opost, setOpost] = React.useState(null);
