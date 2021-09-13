@@ -10,7 +10,7 @@ function List(props) {
       <Link to={props.link}>
         <div className="art-card">
           <div className="card-image">
-            <img src={props.image} />
+            <img src={props.image ? props.image : image2} />
           </div>
           <div className="card-content">
             <h3>{props.title}</h3>

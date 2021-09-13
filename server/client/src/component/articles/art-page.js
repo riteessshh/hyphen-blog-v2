@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
 // import image from "./images/art-image.png";
@@ -62,7 +62,7 @@ function Art(props) {
             <p>Share on</p>
           </div>
           <div className="back">
-            <a href="/articles">back</a>
+            <Link to="/articles">back</Link>
           </div>
         </div>
         {/* <div className="other-arts">

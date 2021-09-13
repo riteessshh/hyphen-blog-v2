@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
 // import image from "./images/art-image.png";
@@ -52,7 +52,7 @@ function Post(props) {
             <p>Share on</p>
           </div>
           <div className="back">
-            <a href="/posts">back</a>
+            <Link to="/posts">back</Link>
           </div>
         </div>
       </div>
