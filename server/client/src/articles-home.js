@@ -15,7 +15,7 @@ function Article() {
     // });
     const res = await fetch("/artcls/");
     const data = await res.json();
-    setArt(data);
+    setPost(data);
   }, []);
 
   if (!post) return null;
