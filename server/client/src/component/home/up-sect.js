@@ -69,7 +69,7 @@ function Section() {
       </header>
       <div className="art-id">
         <p id="active">
-          <Link to={"/articles"}>For more</Link>
+          <Link to={"/articles"}>For more articles</Link>
         </p>
         {/* <p>02</p>
         <p>03</p>

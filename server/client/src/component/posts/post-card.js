@@ -14,13 +14,13 @@ function Card(props) {
         <h3>{props.title}</h3>
         <p className="byline">by {props.author ? props.author : "anonymous"}</p>
         <p>
-          {props.sub ? props.sub.substring(0, 150) : "no content available!"}
+          {props.sub ? props.sub : "no content available!"}
           .....
         </p>
       </div>
-      <Link to={props.link}>
+      {/* <Link to={props.link}>
         Read more <img src={arrow} />
-      </Link>
+      </Link> */}
     </div>
   );
 }

@@ -45,15 +45,13 @@ function Section() {
               by {post_a.author ? post_a.author : "anonymous"}
             </p>
             <p>
-              {post_a.subtitle
-                ? post_a.subtitle.substring(0, 150)
-                : "no content available!"}
+              {post_a.subtitle ? post_a.subtitle : "no content available!"}
               .....
             </p>
           </div>
-          <Link to={`/post/${post_a._id}`}>
+          {/* <Link to={`/posts/${post_a._id}`}>
             Read more <img src={arrow} />
-          </Link>
+          </Link> */}
         </div>
         <div className="card">
           <div className="image">
@@ -65,15 +63,13 @@ function Section() {
               by {post_b.author ? post_b.author : "anonymous"}
             </p>
             <p>
-              {post_b.subtitle
-                ? post_b.subtitle.substring(0, 150)
-                : "no content available!"}
+              {post_b.subtitle ? post_b.subtitle : "no content available!"}
               .....
             </p>
           </div>
-          <Link to={`/post/${post_b._id}`}>
+          {/* <Link to={`/posts/${post_b._id}`}>
             Read more <img src={arrow} />
-          </Link>
+          </Link> */}
         </div>
         <div className="card">
           <div className="image">
@@ -85,15 +81,13 @@ function Section() {
               by {post_c.author ? post_c.author : "anonymous"}
             </p>
             <p>
-              {post_c.subtitle
-                ? post_c.subtitle.substring(0, 150)
-                : "no content available!"}
+              {post_c.subtitle ? post_c.subtitle : "no content available!"}
               .....
             </p>
           </div>
-          <Link to={`/post/${post_c._id}`}>
+          {/* <Link to={`/posts/${post_c._id}`}>
             Read more <img src={arrow} />
-          </Link>
+          </Link> */}
         </div>
       </div>
       <hr className="breakline" />
