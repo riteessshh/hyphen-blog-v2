@@ -1,0 +1,13 @@
+.posts-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 80px;
+  justify-content: space-around;
+}
+
+.card {
+  width: 350px;
+}
+
+/*# sourceMappingURL=pstyles.css.map */

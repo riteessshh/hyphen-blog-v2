@@ -1,0 +1,85 @@
+.box {
+  position: relative;
+  top: -101px;
+  z-index: -10;
+  margin: 0;
+}
+.box img {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 57%;
+}
+
+.box-text {
+  width: 500px;
+  position: absolute;
+  top: 250px;
+  right: 70px;
+}
+.box-text h1 {
+  font-size: 72px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+.box-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+.box-text button {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  width: 200px;
+  height: 50px;
+  padding: auto 20px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.box-text1 {
+  width: 500px;
+  position: absolute;
+  top: 120px;
+  right: 70px;
+}
+.box-text1 h1 {
+  font-size: 72px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+.box-text1 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+}
+.box-text1 .info-entry label {
+  display: block;
+  font-size: 30px;
+  padding: 15px 0;
+}
+.box-text1 .info-entry input {
+  width: 350px;
+  height: 30px;
+  border: 1.5px solid black;
+  padding: 5px 10px;
+}
+.box-text1 .info-entry textarea {
+  width: 350px;
+  height: 100px;
+  border: 1.5px solid black;
+  padding: 5px 10px;
+}
+.box-text1 .info-entry button {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  width: 150px;
+  height: 50px;
+  padding: auto 20px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=extra.css.map */

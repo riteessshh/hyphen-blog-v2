@@ -1,0 +1,17 @@
+.container {
+  margin: 50px 120px 100px;
+}
+.container h1 {
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
+.art-list {
+  position: relative;
+  width: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  /* grid-column-gap: 20px; */
+  grid-row-gap: 50px;
+}
