@@ -14,7 +14,7 @@ function Section() {
   //   });
   // }
 
-  React.useEffect(() => {
+  React.useEffect(async () => {
     // fetchRandom();
     // const fetchArts = async () => {
     //   const res = await axios.get(baseURL);
