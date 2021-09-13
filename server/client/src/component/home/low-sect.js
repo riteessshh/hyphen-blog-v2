@@ -5,6 +5,7 @@ import image1 from "./images/post-sample-1.png";
 import image2 from "./images/post-sample-2.png";
 import image3 from "./images/post-sample-3.png";
 import arrow from "./images/Arrow.svg";
+import { Link } from "react-router-dom";
 
 function Section() {
   const [post_a, setPost_a] = React.useState(null);
@@ -50,9 +51,9 @@ function Section() {
               .....
             </p>
           </div>
-          <a href="#">
+          <Link to={`/post/${post_a._id}`}>
             Read more <img src={arrow} />
-          </a>
+          </Link>
         </div>
         <div className="card">
           <div className="image">
@@ -70,9 +71,9 @@ function Section() {
               .....
             </p>
           </div>
-          <a href="#">
+          <Link to={`/post/${post_b._id}`}>
             Read more <img src={arrow} />
-          </a>
+          </Link>
         </div>
         <div className="card">
           <div className="image">
@@ -90,9 +91,9 @@ function Section() {
               .....
             </p>
           </div>
-          <a href="#">
+          <Link to={`/post/${post_c._id}`}>
             Read more <img src={arrow} />
-          </a>
+          </Link>
         </div>
       </div>
       <hr className="breakline" />
