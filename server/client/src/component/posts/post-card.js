@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../home/images/post-sample-1.png";
 import arrow from "../home/images/Arrow.svg";
+import { Link } from "react-router-dom";
 import "./pstyles.css";
 
 function Card(props) {
@@ -17,9 +18,9 @@ function Card(props) {
           .....
         </p>
       </div>
-      <a href={props.link}>
+      <Link to={props.link}>
         Read more <img src={arrow} />
-      </a>
+      </Link>
     </div>
   );
 }

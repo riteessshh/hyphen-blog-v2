@@ -1,12 +1,13 @@
 import React from "react";
 import image2 from "./images/other-art1.png";
 import arrow from "./images/white-arrow.svg";
+import { Link } from "react-router-dom";
 import "./astyles.css";
 
 function List(props) {
   return (
     <div>
-      <a href={props.link}>
+      <Link to={props.link}>
         <div className="art-card">
           <div className="card-image">
             <img src={props.image} />
@@ -18,7 +19,7 @@ function List(props) {
             </p>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
