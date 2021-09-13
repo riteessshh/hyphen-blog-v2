@@ -39,9 +39,9 @@ const artsSchema = new mongoose.Schema({
 
 const Art = new mongoose.model("Art", artsSchema);
 
-app.get("/", function (req, res) {
-  res.send("hello!");
-});
+// app.get("/", function (req, res) {
+//   res.send("hello!");
+// });
 
 app.get("/articles", function (req, res) {
   Art.find({}, function (err, foundArt) {
