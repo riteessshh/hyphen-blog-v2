@@ -5,7 +5,7 @@ import image1 from "./images/up-sect.png";
 
 function Section() {
   const [art, setArt] = React.useState(null);
-  const baseURL = "http://localhost:4000/randomarticle/";
+  // const baseURL = "http://localhost:4000/randomarticle/";
 
   // function fetchRandom() {
   //   axios.get(baseURL).then((response) => {
@@ -16,12 +16,15 @@ function Section() {
 
   React.useEffect(() => {
     // fetchRandom();
-    const fetchArts = async () => {
-      const res = await axios.get(baseURL);
-      console.log(res);
-      setArt(res.data);
-    };
-    fetchArts();
+    // const fetchArts = async () => {
+    //   const res = await axios.get(baseURL);
+    //   console.log(res);
+    //   setArt(res.data);
+    // };
+    // fetchArts();
+    const res = await fetch("/randomarticle/");
+    const data = await res.json();
+    setArt(data);
   }, []);
 
   if (!art) return null;
