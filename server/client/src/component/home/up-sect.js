@@ -7,15 +7,7 @@ function Section() {
   const [art, setArt] = React.useState(null);
   // const baseURL = "http://localhost:4000/randomarticle/";
 
-  // function fetchRandom() {
-  //   axios.get(baseURL).then((response) => {
-  //     setPost(response.data);
-  //     console.log(response.data);
-  //   });
-  // }
-
   React.useEffect(async () => {
-    // fetchRandom();
     // const fetchArts = async () => {
     //   const res = await axios.get(baseURL);
     //   console.log(res);
